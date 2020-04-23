@@ -1,0 +1,56 @@
+name: "Upload PGYER Action"
+description: "upload apk or ipa file to pgyer"
+author: "xtayga"
+branding:
+  icon: arrow-right-circle
+  color: gray-dark
+inputs:
+  forms:
+    description: Data to be transmitted,such as key, pwd, etc. Use json format
+    required: false
+  fileForms:
+    description: Files to be transferred,such as 'file','image' etc. Use json format
+    required: false
+
+outputs:
+  buildName:
+    description: "buildName"
+  buildKey:
+    description: "buildKey"
+  buildFileSize:
+    description: "buildFileSize"
+  buildIdentifier:
+    description: "buildIdentifier"
+  buildType:
+    description: "buildType"
+  buildIsFirst:
+    description: "buildIsFirst"
+  buildIsLastest:
+    description: "buildIsLastest"
+  buildVersion:
+    description: "buildVersion"
+  buildVersionNo:
+    description: "buildVersionNo"
+  buildBuildVersion:
+    description: "buildBuildVersion"
+  buildDescription:
+    description: "buildDescription"
+  buildUpdateDescription:
+    description: "buildUpdateDescription"
+  buildCreated:
+    description: "buildCreated"
+  buildUpdated:
+    description: "buildUpdated"
+  buildQRCodeURL:
+    description: "buildQRCodeURL"
+  buildShortcutUrl:
+    description: "buildShortcutUrl"
+  buildScreenShots:
+    description: "buildScreenShots"
+  buildIconUrl:
+    description: "buildIconUrl"
+  buildInstallUrl:
+    description: "buildInstallUrl"
+runs:
+  using: "node12"
+  main: "index.js"

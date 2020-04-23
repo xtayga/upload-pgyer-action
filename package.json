@@ -1,0 +1,30 @@
+{
+  "name": "upload-pgyer-action",
+  "version": "1.0.0",
+  "description": "上传apk或ipa文件到蒲公英",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtayga/upload-pgyer-action.git"
+  },
+  "keywords": [
+    "pgyer",
+    "action"
+  ],
+  "author": "xtayga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xtayga/upload-pgyer-action/issues"
+  },
+  "homepage": "https://github.com/xtayga/upload-pgyer-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "axios": "^0.19.2",
+    "form-data": "^3.0.0",
+    "fs": "0.0.1-security",
+    "util": "^0.12.2"
+  }
+}
