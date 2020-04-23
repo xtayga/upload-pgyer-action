@@ -926,13 +926,14 @@ async function main() {
     );
 
     const statusCode = response.status;
-    const data = response.data;
+    const json = response.data;
 
-    console.log(JSON.stringify(data, undefined, 2));
+    console.log(JSON.stringify(json, undefined, 2));
 
     if (statusCode >= 400) {
       core.setFailed(`HTTP request failed with status code: ${statusCode}`);
     } else {
+      const data = json.data || {};
       core.setOutput("buildName", data.buildName);
       core.setOutput("buildKey", data.buildKey);
       core.setOutput(
