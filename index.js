@@ -54,7 +54,11 @@ async function main() {
       );
       core.setOutput(
         "buildInstallUrl",
-        `https://www.pgyer.com/apiv2/app/install?_api_key=${formsMap._api_key}&buildKey=${data.buildKey}&buildPassword=${formsMap.buildPassword}`
+        `https://www.pgyer.com/apiv2/app/install?_api_key=${formsMap.get(
+          "_api_key"
+        )}&buildKey=${data.buildKey}&buildPassword=${formsMap.get(
+          "buildPassword"
+        )}`
       );
     }
   } catch (error) {
